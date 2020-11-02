@@ -7,10 +7,22 @@ https://bitbucket.org/booleancareers/ex-hamburger-menu-base/downloads
 Ricordate di scrivere solo il codice JavaScript con jQuery e non modificare HTML e CSS
 */
 
+//SHOW HIDE SOLUTION
+
+// $('.header-right > a').click(function(){
+//   $('.hamburger-menu').show();
+// })
+//
+// $('.hamburger-menu > .close').click(function(){
+//   $('.hamburger-menu').hide();
+// })
+
+// ADD-REMOVE CLASS SOLUTION
+
 $('.header-right > a').click(function(){
-  $('.hamburger-menu').show();
+  $('.hamburger-menu').addClass('active');
 })
 
 $('.hamburger-menu > .close').click(function(){
-  $('.hamburger-menu').hide();
+  $('.hamburger-menu').removeClass('active');
 })
